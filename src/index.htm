@@ -7,10 +7,33 @@
 </head>
 
 <body>
-  <h1>Webpack - TypeScript - Scss</h1>
-  <h2>TypeScript Hello World</h2>  
+  <h1>Customer list</h1>  
+  <button id="getAllButton">Get all customers</button>
   <div id="content"></div>
-    
+
+
+  <h1>Single customer (By ID)</h1>
+  <button id="getCustomerByIdButton">Get customer</button>
+  <input type="number" placeholder="Customer ID" id="findCustomer" value="0">
+  <div id="contentById"></div>
+ 
+
+  <h1>Adding a new Customer</h1>
+  <button id="addCustomerButton">Add customer</button>
+  <br>
+  <input id="addCustomerFirstName" placeholder="Customer first name"> 
+  <br>
+  <input id="addCustomerLastName" placeholder="Customer last name">
+  <br>
+  <input id="addCustomerYear" placeholder="Customer year" type="number">
+  
+  <h1>Deleting a Customer</h1>
+  <button id="deleteCustomerButton">Delete Customer</button>
+  <input type="number" id="deleteCustomer" placeholder="Customer ID">
+  
+  <div id="deleteContentById"></div>
+
+
   <script src="bundle.js"></script>
 </body>
 </html>
